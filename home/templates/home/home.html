@@ -10,27 +10,29 @@
     <link rel="stylesheet" href="{% static 'home/styles/style.css' %}" />
   </head>
   <body>
-    <!-- 4:42 Creating our Navbar Start - @shadia_kabir -->
-    <!-- Creating our Navbar End - @shadia_kabir -->
-
-    <!-- 35:04 Toggle Mobile Menu with Javascript Start - @anandah_rafi -->
-    <!-- Toggle Mobile Menu with Javascript End - @anandah_rafi -->
-
-    <!-- 40:40 Creating Hero Section Start - @anandah_rafi -->
-    <!-- Creating Hero Section End - @anandah_rafi -->
-
-    <!-- 50:25 Creating About Section Start - @anandah_rafi -->
-    <!-- Creating About Section End - @anandah_rafi -->
-
-    <!-- 1:14:26 Creating Services Section Start - @shadia_kabir -->
-    <!-- Creating Services Section End - @shadia_kabir -->
-
-    <!-- 1:26:38 Creating Sign up Section Start - @shadia_kabir -->
-    <!-- Creating Sign up Section End - @shadia_kabir -->
-
-    <!-- 1:29:35 Creating Footer Section Start - @anandah_rafi -->
-    <!-- Creating Footer Section End - @anandah_rafi -->
-
-    <!-- 1:46:18 Adding Javascript Smooth Scroll -->
+    <!--Navbar Section-->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="#home" id="navbar__logo">COLOR</a>
+        <div class="navabar__toggle" id="mobile"></div>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span> 
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="#home" class="navbar__links" id="home-page">Home</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#about" class="navbar__links" id="about-page">About</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#services" class="navbar__links" id="services-page">Services</a>
+        </li>
+        <li class="navbar__btn">
+          <a href="#join-class" class="button" id="join-class">Join class</a>
+        </li>
+      </ul>
+    </nav>
   </body>
 </html>
