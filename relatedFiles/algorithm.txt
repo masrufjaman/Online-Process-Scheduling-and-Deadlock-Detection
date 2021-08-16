@@ -1,0 +1,43 @@
+<---------- Operating System Scheduling algorithms ---------->
+
+<----- First-Come, First-Served (FCFS) Scheduling ----->
+First come first serve (FCFS) scheduling algorithm simply schedules the jobs according to their arrival time. The job which comes first in the ready queue will get the CPU first. The lesser the arrival time of the job, the sooner will the job get the CPU. FCFS scheduling may cause the problem of starvation if the burst time of the first process is the longest among all the jobs.
+
+- Advantages of FCFS
+1. Simple
+2. Easy
+3. First come, First serv
+
+- Disadvantages of FCFS
+1. The scheduling method is non preemptive, the process will run to the completion.
+2. Due to the non-preemptive nature of the algorithm, the problem of starvation may occur.
+3. Although it is easy to implement, but it is poor in performance since the average waiting time is higher as compare to other scheduling algorithms.
+
+- Algorithm
+Step-01: Start
+Step-02: Read process, burst time
+Step-03: Find waiting time(wt) for all processes
+        - As first process that comes need not to wait so 
+        waiting time for process 1 will be 0 i.e. wt[0] = 0.
+        - Find waiting time for all other processes i.e. for
+        process i -> 
+            wt[i] = bt[i-1] + wt[i-1]
+Step-04: Find turnaround time = waiting_time + burst_time 
+        for all processes.
+Step-05: Find average waiting time = total_waiting_time / no_of_processes.
+Step-06: Similarly, find average turnaround time = total_turn_around_time / no_of_processes.
+Step-07: End
+
+<----- Shortest-Job-Next (SJN) Scheduling ----->
+
+
+<----- Priority Scheduling ----->
+
+
+<----- Round Robin(RR) Scheduling ----->
+
+
+
+
+
+<---------- DEADLOCK in Operating System ---------->
